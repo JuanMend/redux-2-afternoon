@@ -6,17 +6,16 @@ import Budget from './components/Budget/Budget';
 import './App.css';
 
 class App extends Component {
-
-  render() {
-    return (
-      <HashRouter>
-        <Switch>
-          <Route path='/' component={Login} exact />
-          <Route path='/my-budget' component={Budget} />
-        </Switch>
-      </HashRouter>
-    );
-  }
+	render() {
+		return (
+			<HashRouter>
+				<Switch>
+					<Route path="/" component={Login} exact />
+					<Route path="/my-budget" component={Budget} />
+				</Switch>
+			</HashRouter>
+		);
+	}
 }
 
 export default App;
